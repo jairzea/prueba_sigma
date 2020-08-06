@@ -1,5 +1,27 @@
 @import 'fonts';
 
+@media screen  and (max-width: 767px)
+{
+    .card-from
+    {
+        
+        position: absolute;
+
+        .card-body
+        {
+            position: absolute !important;
+            z-index: 3;
+            background-color: white;
+            margin-left: 10%;
+            width: 50% !important;
+            border-radius: 13px 28px 28px 28px;
+            -moz-border-radius: 13px 28px 28px 28px;
+            -webkit-border-radius: 13px 28px 28px 28px;
+            border: 0px solid #ffffff;
+        }
+    }
+} 
+
 @media screen  and (max-width: 375px) 
 {
 
@@ -7,18 +29,25 @@
     {
         width: 80%;
         padding-top: 0%;
-        display: none;
+        // display: none;
     }
 
     .card-from
     {
         
-        position: relative;
+        position: absolute;
 
         .card-body
         {
             position: absolute !important;
             z-index: 3;
+            background-color: white;
+            margin-left: 5%;
+            width: 80% !important;
+            border-radius: 13px 28px 28px 28px;
+            -moz-border-radius: 13px 28px 28px 28px;
+            -webkit-border-radius: 13px 28px 28px 28px;
+            border: 0px solid #ffffff;
         }
     }
 
@@ -31,6 +60,10 @@
     .lead
     {
         margin-top: 30px !important;
+    }
+
+    .row{
+        position:relative;
     }
     
 

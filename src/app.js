@@ -19,7 +19,7 @@ $(document).ready(function(){
 
         for (let i = 0; i < departamentos.length; i++) {
             
-            select.append('<option value=' + departamentos[i] + '>' +departamentos[i] + '</option>');
+            select.append('<option value=' + `'${departamentos[i]}'` + '>' +departamentos[i] + '</option>');
         }
         
     })
@@ -43,7 +43,7 @@ $('#sel_departamento').on('change', function(){
 
         for (let i = 0; i < objeto[departamento].length; i++) {
             
-            select.append('<option value=' + objeto[departamento][i] + '>' +objeto[departamento][i] + '</option>');
+            select.append('<option value=' + `'${objeto[departamento][i]}'` + '>' +objeto[departamento][i] + '</option>');
         }
         
     })
@@ -98,14 +98,16 @@ $(document).on('click', '.btn-enviar', function(){
             'email': $("#txt_correo").val()
         },
         dataType: 'json',
-        success:function(respuesta){
-            console.log("respuesta", respuesta);
+        beforeSend: function(){
+            $("#formRegistro")[0].reset()
             swal.fire({
                 icon: 'success',
                 title: 'Exito',
                 text: 'Tu información ha sido recibida satisfactoriamente!',
-                footer: '<a href>Why do I have this issue?</a>'
               })
+        },
+        success:function(respuesta){
+
         }
 
     })
