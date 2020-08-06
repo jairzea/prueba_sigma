@@ -1,0 +1,106 @@
+@import 'fonts';
+
+@media screen  and (max-width: 375px) 
+{
+
+    .img-sima-people
+    {
+        width: 80%;
+        padding-top: 0%;
+        display: none;
+    }
+
+    .card-from
+    {
+        
+        position: relative;
+
+        .card-body
+        {
+            position: absolute !important;
+            z-index: 3;
+        }
+    }
+
+    h2
+    {
+        font-size: 27px;
+        margin-top: 40px;
+    }
+
+    .lead
+    {
+        margin-top: 30px !important;
+    }
+    
+
+} 
+
+body
+{
+    h2
+    {
+    font-family: Roboto;
+    color: black;
+    }
+     
+}
+
+.lead
+{
+    margin-top: 3%;
+    font-size: 18px !important;
+    font-weight: 640;
+    color: gray;
+}
+
+.card
+{
+    border-radius: 13px 28px 28px 28px;
+    -moz-border-radius: 13px 28px 28px 28px;
+    -webkit-border-radius: 13px 28px 28px 28px;
+    border: 0px solid #ffffff;
+}
+
+.btn-enviar
+{
+    background: #dd3c64 !important;
+    color: white;
+    border-radius: 28px 28px 28px 28px;
+    font-family: Roboto-medium;
+    padding: 15px 50px 15px 50px;
+    margin: 15px 0px 35px 0px;
+}
+
+.form-group
+{
+    padding: 10px 30px 10px 30px;
+    font-family: Roboto;
+    color: black;
+   
+}
+
+form
+{
+    padding-top: 40px;
+
+    .form-group-btn
+    {
+        text-align: center;
+    }
+}
+
+.form-control
+{
+    font-family: Roboto-medium;
+    // color: rgba(211, 209, 209, 0.836) !important;
+    border: 1px solid #e9ecef;
+}
+
+.img-sima-people
+{
+    width: 100%;
+    padding-top: 20%;
+}
+
+
